@@ -15,32 +15,15 @@ In this lesson, we will discuss the difference between HTML and something new: t
 
 2. Change the url of your website to view source
 
-	Here's how you do it. From a Google chrome browser, go to the url of a webpage.  We are going to the page `https://learn.co/tracks/javascript-with-style`.  Then to see the HTML of that page simply, add on `view-source:` to the front of the url.  So we are changing our url to `view-source:https://learn.co/tracks/javascript-with-style`.
+	Here's how you do it. From a Google chrome browser, go to the url of a webpage.  We are going to the page `https://www.wikipedia.org/`.  Then to see the HTML of that page simply, add on `view-source:` to the front of the url.  So we are changing our url to `view-source:https://www.wikipedia.org/`.
 
 If you examine this tab, you will see the HTML used to construct the page you were viewing.  It will look something like this:
 
-![html-source](https://s3.amazonaws.com/learn-verified/html-javascript-lesson.png)
+	![wikipedia-html](wikipedia-html.png)
 
 The browser interprets this, along with the styles (CSS) and Javascript to construct the appearances in the browser.  
 
-Notice that what we see in our the view source tab looks very similar to HTML you may have seen previously.
-
-```html
-<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title></title>
-	      <link rel="stylesheet" href="style.css">
-  	</head>
-  <body>
-    <header>....</header>
-    <img id="kitten" class="" src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" width="120" height="120">
-  </body>
-  <script src="https://raw.githubusercontent.com/learn-co-curriculum/js-and-the-web/master/spin.js" charset="utf-8"></script>
-</html>
-
-```
+### Moving to the DOM
 
 It may look like our browser is simply displaying the HTML that we see, but it is not.  Instead, our browser is directly displaying the Document Object Model of the respective webpage. What does that mean?  What is the Document Object Model, and how is it different than the HTML for the page?
 
@@ -50,10 +33,10 @@ The best way to describe the Document Object Model, is to see and interact with 
 
 #### 1. Open the console
 
-![opening-console](https://s3.amazonaws.com/learn-verified/opening-console.gif)
+![opening-console](./opening-console.mp4)
 
 > From this webpage, look at the Chrome menubar at the top of the page. Click on "View", then select "Developer", then "Developer Tools". This will open the Google Developer Console.
-
+> Or, you can right click, which will bring up a dropdown near your mouse.  Click on
 #### 2. Manipulate the DOM
 
 ![delete-header](http://web-dev-readme-photos.s3.amazonaws.com/js/header-click.png)
